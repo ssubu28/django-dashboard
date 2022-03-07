@@ -14,7 +14,7 @@ def homepage(request):
     results = response.json()
     context = {
     }
-
+    
     return render(request, 'homepage.html', context)
 
 
@@ -56,8 +56,6 @@ def reposchart(request):
     return render(request, "reposchart.html", context)
 
 
-# Creating ⬢ djangodashboard03... done
-# https://djangodashboard03.herokuapp.com/ | https://git.heroku.com/djangodashboard03.git
 
 def reposlang(request): 
     print("-- repos lang --")
