@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block title %} All repos
+{% endblock title %}
+
+{% load static %}
+
+
+{% block content %}
+
+   <!--  <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="GitHub User Name" aria-label="GitHub User Name" aria-describedby="button-addon1">
+        <button class="btn btn-outline-secondary" type="button" id="button-addon1">Submit</button>
+    </div>
+
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Repo Name" aria-label="Repo Name" aria-describedby="button-addon2">
+        <button class="btn btn-outline-secondary" type="button" id="button-addon2">Submit</button>
+    </div> -->
+
+    <h1>Languages Used</h1>
+    <embed type="image/svg+xml" src="{{ lang_chart|safe }}"/>
+
+    
+    <!-- bonus - repo lookup  -->
+   <!--  <div class="input-group">
+        <span class="input-group-text">GitHub User name and Repo name</span>
+        <input type="text" aria-label="GitHub User name" class="form-control">
+        <input type="text" aria-label="Repo name" class="form-control">
+    </div> -->
+
+    
+
+
+{% endblock content %}
+
+

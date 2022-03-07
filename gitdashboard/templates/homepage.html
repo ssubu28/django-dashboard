@@ -1,1 +1,44 @@
-<h1>This is the homepage.html file</h1>
+{% extends "base.html" %}
+
+{% block content %}
+
+    <h1>Welcome to my Github stats page</h1><br>
+    <div>
+        <p> This page is built using Django, Python and HTML and lists the various stats about my GitHub Account </p></br></br>
+    </div>
+
+
+    <div class="row">
+        <div class="col-sm">
+            <div class="card border-primary" style="width: 23rem;">
+                <div class="card-body">
+                <h5 class="card-title">Languages Used</h5>
+                <p class="card-text">Various languages used in the repos</p>
+                <a href="../reposlang" class="btn btn-primary">Languages Used</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm">
+            <div class="card border-primary" style="width: 23rem;">
+                <div class="card-body">
+                <h5 class="card-title">Repos List</h5>
+                <p class="card-text">List of all repos in this account</p>
+                <a href="../allrepos" class="btn btn-primary">Repos List</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm">
+            <div class="card border-primary" style="width: 23rem;">
+                <div class="card-body">
+                <h5 class="card-title">Repos Size</h5>
+                <p class="card-text">Size of repos</p>
+                <a href="../reposlang" class="btn btn-primary">Repos Size</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+{% endblock content %}

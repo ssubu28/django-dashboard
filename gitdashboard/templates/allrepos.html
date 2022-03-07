@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %} All repos
+{% endblock title %}
+
+{% load static %}
+
+
+{% block content %}
+
+<h1>Repositories List</h1>
+
+<table> 
+
+    <thead><tr> <th>Repo Name</th> <th>Repo Size</th> <th>Languages Used</th> </th> <th>Repo Creation Date</th> <th> Visibility</th> <th>Repo Info</th></tr></thead>
+    <tbody>
+        {% for repo in repos %}
+            <tr> <td>{{ repo.name }}</td> <td>{{ repo.size }}</td> <td>{{ repo.language }}</td> <td>{{ repo.created_at }}</td> <td>{{ repo.visibility }}</td> <td> <a href="{{ repo.url }}" target="_blank" title="{{ repo.name }}"> <button type="button" class="btn btn-primary">View</button> </a> </td> </tr>
+        {% endfor %}
+    </tbody>
+
+</table> 
+
+
+{% endblock content %}
+
+

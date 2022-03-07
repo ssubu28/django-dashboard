@@ -1,0 +1,38 @@
+
+table, th, td {
+  border: 3px solid white;
+  border-style:double;
+  border-color: #96D4D4;
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 30px;
+
+}
+
+navbar-nav{
+  background-color: #e3f2fd;
+}
+
+
+th, td {
+  text-align: left;
+  padding: 15px;
+
+}
+
+th{
+  background-color: black;
+  color: white;
+
+}
+
+tr:nth-child(even) {
+  background-color: #D6EEEE;
+  border-bottom: 1px solid #ddd;
+
+}
+
+
+h1, h3 {
+  color: black;
+}

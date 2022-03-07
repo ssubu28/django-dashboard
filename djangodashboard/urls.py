@@ -19,5 +19,8 @@ from gitdashboard import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.viewfunc1),
+    path('', views.homepage),
+    path('allrepos/', views.allrepos),
+    path('reposchart/', views.reposchart),
+    path('reposlang/', views.reposlang),
 ]
